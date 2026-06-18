@@ -1,0 +1,11 @@
+Date,Region,Product,Category,Units_Sold,Unit_Price,Revenue,Cost,Profit,Customer_Type,Payment_Mode,Rating
+2024-01-01,North,Laptop,Electronics,5,55000,275000,240000,35000,Corporate,Credit Card,4.5
+2024-01-02,South,Mobile,Electronics,12,18000,216000,190000,26000,Individual,UPI,4.2
+2024-01-03,East,Tablet,Electronics,8,25000,200000,175000,25000,Corporate,Debit Card,4.0
+2024-01-04,West,Chair,Furniture,20,3500,70000,52000,18000,Individual,Cash,3.8
+2024-01-05,North,Desk,Furniture,10,8000,80000,60000,20000,Corporate,Credit Card,4.3
+2024-01-06,South,Printer,Electronics,6,15000,90000,75000,15000,Individual,UPI,4.1
+2024-01-07,East,Monitor,Electronics,9,12000,108000,90000,18000,Corporate,Debit Card,4.4
+2024-01-08,West,Keyboard,Accessories,25,1200,30000,20000,10000,Individual,Cash,3.9
+2024-01-09,North,Mouse,Accessories,30,700,21000,15000,6000,Individual,UPI,4.0
+2024-01-10,South,Laptop,Electronics,4,56000,224000,200000,24000,Corporate,Credit Card,4.6
