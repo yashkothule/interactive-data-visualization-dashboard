@@ -1,103 +1,72 @@
-# College ERP System
+# Interactive Data Visualization Dashboard
 
-A database-driven College ERP System designed to manage and organize academic information through structured data management, SQL-based operations, and reporting workflows.
+A full-stack data analytics platform that transforms raw CSV datasets into structured, interactive dashboards, visual insights, and downloadable analytical reports.
 
-The project demonstrates practical use of relational databases, SQL queries, backend development, and data management to handle academic records efficiently.
+The application provides an integrated workflow for uploading datasets, cleaning and validating data, generating KPIs, exploring trends, creating interactive visualizations, and exporting analytical reports.
 
 ---
 
 ## Overview
 
-The College ERP System provides a centralized platform for managing structured academic data.
+The Interactive Data Visualization Dashboard is designed to simplify the process of exploring and understanding raw datasets through a web-based interface.
 
-The system focuses on organizing information into relational database tables and providing efficient operations for storing, retrieving, updating, and analyzing records.
+Users can upload CSV datasets, after which the application processes the data through a structured workflow involving validation, cleaning, transformation, analysis, visualization, and report generation.
 
-The project demonstrates how database systems can be used to support real-world institutional data management and reporting requirements.
+The project demonstrates practical implementation of **Python-based data processing, SQL databases, exploratory analysis, interactive visualization, and automated reporting**.
 
 ---
 
 ## Key Features
 
-- Student data management
-- Academic record management
-- Structured relational data storage
-- CRUD operations
-- SQL-based data retrieval
-- Filtering and searching of records
-- Relational database management
-- Data validation
-- Database-driven reporting
-- Efficient record management
-- Backend integration with database
+- User registration and secure login
+- Session-based authentication
+- CSV dataset upload
+- Data validation and preprocessing
+- Automatic data cleaning
+- Missing-value handling
+- Data transformation
+- Dynamic KPI generation
+- Exploratory data analysis
+- Interactive visualizations
+- Real-time data filtering
+- Statistical insights
+- Trend identification
+- Analytical dashboard generation
+- Automated PDF report generation
+- Downloadable analytical reports
 
 ---
 
-## Data & Database Focus
-
-The project demonstrates practical implementation of:
-
-- Relational database design
-- SQL queries
-- Table relationships
-- Primary and foreign keys
-- Data normalization
-- CRUD operations
-- Joins and aggregations
-- Data validation
-- Structured data management
-- Reporting workflows
-
----
-
-## Technology Stack
-
-| Category | Technologies |
-|---|---|
-| Programming | Python |
-| Database | MySQL |
-| Database Concepts | SQL, DBMS, Relational Database Design |
-| Backend | Flask |
-| Frontend | HTML5, CSS3, JavaScript |
-| Version Control | Git, GitHub |
-
----
-
-## System Architecture
+## Data Processing Workflow
 
 ```text
-                         User
-                          │
-                          ▼
-                 ┌─────────────────┐
-                 │    Frontend     │
-                 │  HTML/CSS/JS    │
-                 └────────┬────────┘
-                          │
-                          ▼
-                 ┌─────────────────┐
-                 │  Flask Backend  │
-                 │   Application   │
-                 └────────┬────────┘
-                          │
-             ┌────────────┼────────────┐
-             │            │            │
-             ▼            ▼            ▼
-        Data Input    Data Processing  Queries
-             │            │            │
-             └────────────┼────────────┘
-                          │
-                          ▼
-                 ┌─────────────────┐
-                 │ MySQL Database  │
-                 │                 │
-                 │ Students        │
-                 │ Courses         │
-                 │ Academic Data   │
-                 │ Records         │
-                 └────────┬────────┘
-                          │
-                          ▼
-                 ┌─────────────────┐
-                 │ Reporting &     │
-                 │ Data Retrieval  │
-                 └─────────────────┘
+CSV Dataset
+     │
+     ▼
+Data Upload
+     │
+     ▼
+Validation
+     │
+     ▼
+Data Cleaning
+     │
+     ▼
+Data Transformation
+     │
+     ▼
+Data Analysis
+     │
+     ├───────────────┐
+     ▼               ▼
+KPI Generation   Trend Analysis
+     │               │
+     └───────┬───────┘
+             ▼
+     Interactive Dashboard
+             │
+             ▼
+       Visual Insights
+             │
+             ▼
+       PDF Report
