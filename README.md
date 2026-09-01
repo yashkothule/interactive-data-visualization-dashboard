@@ -1,33 +1,51 @@
-# Interactive Data Visualization Dashboard
+# College ERP System
 
-A full-stack data analytics platform that transforms raw CSV datasets into interactive dashboards, visual insights, and downloadable PDF reports.
+A database-driven College ERP System designed to manage and organize academic information through structured data management, SQL-based operations, and reporting workflows.
 
-The application allows users to upload datasets, automatically clean and process the data, explore KPIs and visualizations, identify trends, and export analytical reports.
+The project demonstrates practical use of relational databases, SQL queries, backend development, and data management to handle academic records efficiently.
 
 ---
 
 ## Overview
 
-The Interactive Data Visualization Dashboard is designed to simplify exploratory data analysis through a web-based interface.
+The College ERP System provides a centralized platform for managing structured academic data.
 
-Users can upload CSV datasets and the application handles data cleaning, validation, analysis, visualization, and report generation through an integrated workflow.
+The system focuses on organizing information into relational database tables and providing efficient operations for storing, retrieving, updating, and analyzing records.
+
+The project demonstrates how database systems can be used to support real-world institutional data management and reporting requirements.
 
 ---
 
 ## Key Features
 
-- User registration and secure login
-- Session-based authentication
-- CSV dataset upload
-- Automatic data cleaning and validation
-- Missing-value handling
-- Dynamic KPI generation
-- Interactive data visualizations
-- Real-time filtering
-- Automated statistical insights
-- Trend identification
-- Dashboard report generation
-- PDF export
+- Student data management
+- Academic record management
+- Structured relational data storage
+- CRUD operations
+- SQL-based data retrieval
+- Filtering and searching of records
+- Relational database management
+- Data validation
+- Database-driven reporting
+- Efficient record management
+- Backend integration with database
+
+---
+
+## Data & Database Focus
+
+The project demonstrates practical implementation of:
+
+- Relational database design
+- SQL queries
+- Table relationships
+- Primary and foreign keys
+- Data normalization
+- CRUD operations
+- Joins and aggregations
+- Data validation
+- Structured data management
+- Reporting workflows
 
 ---
 
@@ -35,13 +53,11 @@ Users can upload CSV datasets and the application handles data cleaning, validat
 
 | Category | Technologies |
 |---|---|
-| Frontend | HTML5, CSS3, JavaScript |
-| Backend | Python, Flask |
+| Programming | Python |
 | Database | MySQL |
-| Data Processing | Pandas, NumPy |
-| Visualization | Plotly |
-| PDF Generation | ReportLab, Kaleido |
-| Authentication | Flask-Login, Werkzeug |
+| Database Concepts | SQL, DBMS, Relational Database Design |
+| Backend | Flask |
+| Frontend | HTML5, CSS3, JavaScript |
 | Version Control | Git, GitHub |
 
 ---
@@ -49,33 +65,39 @@ Users can upload CSV datasets and the application handles data cleaning, validat
 ## System Architecture
 
 ```text
-                    User
-                     │
-                     ▼
-             ┌─────────────────┐
-             │    Frontend     │
-             │ HTML/CSS/JS     │
-             └────────┬────────┘
-                      │
-                      ▼
-             ┌─────────────────┐
-             │ Flask Backend   │
-             └────────┬────────┘
-                      │
-       ┌──────────────┼──────────────┐
-       │              │              │
-       ▼              ▼              ▼
- Authentication   Data Processing   Visualization
-       │              │              │
-       └──────────────┼──────────────┘
-                      │
-                      ▼
-             ┌─────────────────┐
-             │  MySQL Database │
-             └─────────────────┘
-                      │
-                      ▼
-             ┌─────────────────┐
-             │ PDF Report      │
-             │ Generation      │
-             └─────────────────┘
+                         User
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    Frontend     │
+                 │  HTML/CSS/JS    │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │  Flask Backend  │
+                 │   Application   │
+                 └────────┬────────┘
+                          │
+             ┌────────────┼────────────┐
+             │            │            │
+             ▼            ▼            ▼
+        Data Input    Data Processing  Queries
+             │            │            │
+             └────────────┼────────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │ MySQL Database  │
+                 │                 │
+                 │ Students        │
+                 │ Courses         │
+                 │ Academic Data   │
+                 │ Records         │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │ Reporting &     │
+                 │ Data Retrieval  │
+                 └─────────────────┘
